@@ -20,6 +20,7 @@ class AboutController: Controller() {
         }
 
         primaryStage.show()
+        primaryStage.toFront()
     }
 
     fun close() {
