@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easybookmarks.iml" filepath="$PROJECT_DIR$/.idea/modules/easybookmarks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easybookmarks_main.iml" filepath="$PROJECT_DIR$/.idea/modules/easybookmarks_main.iml" group="easybookmarks" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easybookmarks_test.iml" filepath="$PROJECT_DIR$/.idea/modules/easybookmarks_test.iml" group="easybookmarks" />
+    </modules>
+  </component>
+</project>
