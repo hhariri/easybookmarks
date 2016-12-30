@@ -4,12 +4,15 @@ out/*
 .DS_Store/*
 .DS_Store
 lib/kotlin-runtime.jar
+build/**
 */build/
-classes/
 */.gradle/
+*/out/
+classes/
+.gradle/**
 gradle.properties
 slack.log
-*/out/
+out/**
 lib/
 .idea/
 **.iml
