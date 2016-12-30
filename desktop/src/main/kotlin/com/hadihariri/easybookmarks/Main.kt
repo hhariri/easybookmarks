@@ -1,6 +1,6 @@
 package com.hadihariri.easybookmarks
 
-import AppSettings
+import com.hadihariri.easybookmarks.AppSettings
 import com.hadihariri.easybookmarks.about.AboutController
 import com.hadihariri.easybookmarks.main.MainView
 import javafx.application.Application

@@ -1,5 +1,6 @@
 package com.hadihariri.easybookmarks.about
 
+import com.hadihariri.easybookmarks.AppSettings
 import javafx.beans.property.SimpleIntegerProperty
 import javafx.geometry.Pos
 import javafx.scene.layout.BorderPane
