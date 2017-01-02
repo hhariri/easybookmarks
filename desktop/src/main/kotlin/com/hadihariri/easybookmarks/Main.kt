@@ -8,9 +8,13 @@ import com.hadihariri.easybookmarks.settings.SettingsController
 import javafx.application.Application
 import javafx.application.Platform
 import javafx.stage.Stage
+import org.jnativehook.GlobalScreen
 import tornadofx.App
 import java.awt.*
 import java.io.IOException
+import java.util.logging.Level
+import java.util.logging.Logger
+import javax.swing.JMenuItem
 import javax.swing.SwingUtilities
 
 
@@ -77,6 +81,7 @@ class EasyBookmarkApp : App(MainView::class) {
             }
         }
 
+
         popup.add(captureItem)
         popup.add(settingsItem)
         popup.add(aboutItem)
@@ -87,7 +92,15 @@ class EasyBookmarkApp : App(MainView::class) {
 }
 
 fun main(args: Array<String>) {
+    setupKeyPress()
     Application.launch(EasyBookmarkApp::class.java, *args)
+}
+
+private fun setupKeyPress() {
+    val logger = Logger.getLogger(GlobalScreen::class.java.`package`.name)
+    logger.level = Level.OFF
+    GlobalScreen.addNativeKeyListener(GlobalKeyPress())
+    GlobalScreen.registerNativeHook()
 }
 
 

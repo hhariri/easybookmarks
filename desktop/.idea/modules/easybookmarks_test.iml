@@ -46,6 +46,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="easybookmarks_main" />
+    <orderEntry type="library" name="Gradle: com.1stleg:jnativehook:2.0.3" level="project" />
     <orderEntry type="library" name="Gradle: no.tornado:tornadofx:1.5.9" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.1-M04" level="project" />
     <orderEntry type="library" name="Gradle: org.glassfish:javax.json:1.0.4" level="project" />
