@@ -1,4 +1,4 @@
-package com.hadihariri.easybookmarks
+package com.hadihariri.easybookmarks.data
 
 import tornadofx.getProperty
 import tornadofx.property

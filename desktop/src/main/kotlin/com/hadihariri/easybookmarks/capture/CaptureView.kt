@@ -6,21 +6,19 @@ import tornadofx.*
 
 
 class CaptureView: View("Capture Link") {
-    val controller: CaptureController by inject()
-    var url: TextField by singleAssign()
-    var category: TextField by singleAssign()
-    var notes: TextArea by singleAssign()
+    val model : CaptureViewModel by inject()
 
     override val root = form {
         fieldset {
             field("URL") {
-                url = textfield(controller.capturedUrl)
+                textfield(model.url)
             }
             field("Category") {
-                category = textfield()
+                textfield(model.category)
+                requestFocus()
             }
             field("Notes") {
-                notes = textarea()
+                textarea(model.notes)
             }
         }
     }

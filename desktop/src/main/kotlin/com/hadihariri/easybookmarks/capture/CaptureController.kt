@@ -1,22 +1,17 @@
 package com.hadihariri.easybookmarks.capture
 
-import com.hadihariri.easybookmarks.Link
 import com.hadihariri.easybookmarks.OSXUrl
 import com.hadihariri.easybookmarks.showView
 import tornadofx.Controller
-import tornadofx.singleAssign
 
 
 class CaptureController: Controller() {
-
+    val model: CaptureViewModel by inject()
     val captureView: CaptureView by inject()
-    var capturedUrl: String = ""
     val osxUrl = OSXUrl()
 
     fun showCapture() {
-        capturedUrl = osxUrl.chromeUrl()
+        model.url.value = osxUrl.chrome().url
         showView(captureView)
-        captureView.category.requestFocus()
-
     }
 }
