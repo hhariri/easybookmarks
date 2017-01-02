@@ -1,4 +1,4 @@
-package com.hadihariri.easybookmarks
+package com.hadihariri.easybookmarks.system
 
 import com.hadihariri.easybookmarks.capture.CaptureController
 import javafx.application.Platform

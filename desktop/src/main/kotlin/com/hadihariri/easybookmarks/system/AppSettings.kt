@@ -1,4 +1,4 @@
-package com.hadihariri.easybookmarks
+package com.hadihariri.easybookmarks.system
 
 import java.awt.Image
 import java.io.File

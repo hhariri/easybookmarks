@@ -1,8 +1,8 @@
 package com.hadihariri.easybookmarks.capture
 
-import com.hadihariri.easybookmarks.OSXUrlCapturer
-import com.hadihariri.easybookmarks.UrlInformation
-import com.hadihariri.easybookmarks.showView
+import com.hadihariri.easybookmarks.urlcapturers.OSXUrlCapturer
+import com.hadihariri.easybookmarks.urlcapturers.UrlInformation
+import com.hadihariri.easybookmarks.system.showView
 import tornadofx.Controller
 
 

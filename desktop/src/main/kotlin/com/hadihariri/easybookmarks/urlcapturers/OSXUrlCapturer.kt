@@ -1,23 +1,6 @@
-package com.hadihariri.easybookmarks
+package com.hadihariri.easybookmarks.urlcapturers
 
 import javax.script.ScriptEngineManager
-
-interface UrlCapturer {
-    fun getUrl(): UrlInformation
-    fun chrome(): UrlInformation
-    fun opera(): UrlInformation
-    fun omniweb(): UrlInformation
-    fun safari(): UrlInformation
-    fun webkit(): UrlInformation
-    fun ie(): UrlInformation
-    fun edge(): UrlInformation
-    fun camino(): UrlInformation
-}
-
-sealed class UrlInformation {
-    class Success(val url: String, val title: String) : UrlInformation()
-    class Error(val message: String) : UrlInformation()
-}
 
 class OSXUrlCapturer : UrlCapturer {
     override fun getUrl(): UrlInformation {

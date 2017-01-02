@@ -1,7 +1,7 @@
 package com.hadihariri.easybookmarks.about
 
-import com.hadihariri.easybookmarks.hideView
-import com.hadihariri.easybookmarks.showView
+import com.hadihariri.easybookmarks.system.hideView
+import com.hadihariri.easybookmarks.system.showView
 import javafx.stage.Screen
 import tornadofx.Controller
 import tornadofx.FX

@@ -1,5 +1,6 @@
-package com.hadihariri.easybookmarks
+package com.hadihariri.easybookmarks.system
 
+import com.sun.glass.ui.Application
 import javafx.stage.Screen
 import tornadofx.FX.Companion.primaryStage
 import tornadofx.View
@@ -7,7 +8,7 @@ import tornadofx.View
 
 fun showView(view: View) {
     // Try to detect the correct screen
-    val robot = com.sun.glass.ui.Application.GetApplication().createRobot()
+    val robot = Application.GetApplication().createRobot()
     val screen = Screen.getScreensForRectangle(robot.mouseX.toDouble(), robot.mouseY.toDouble(), 1.0, 1.0).firstOrNull()
     if (screen != null) {
         primaryStage.x = screen.visualBounds.minX + 100
