@@ -5,10 +5,6 @@ import java.io.File
 import java.util.*
 import javax.imageio.ImageIO
 
-/**
- * Created by hadihariri on 29/12/16.
- */
-
 object AppSettings {
     val version: String by lazy {
         val propertyStream = this.javaClass.classLoader.getResourceAsStream("version.properties")

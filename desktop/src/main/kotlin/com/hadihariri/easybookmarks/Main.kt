@@ -2,7 +2,9 @@ package com.hadihariri.easybookmarks
 
 import com.hadihariri.easybookmarks.AppSettings
 import com.hadihariri.easybookmarks.about.AboutController
+import com.hadihariri.easybookmarks.capture.CaptureController
 import com.hadihariri.easybookmarks.main.MainView
+import com.hadihariri.easybookmarks.settings.SettingsController
 import javafx.application.Application
 import javafx.application.Platform
 import javafx.stage.Stage
@@ -61,7 +63,22 @@ class EasyBookmarkApp : App(MainView::class) {
                 AboutController().showAbout()
             }
         }
+        val settingsItem = MenuItem("Settings")
+        settingsItem.addActionListener {
+            Platform.runLater {
+                SettingsController().showSettings()
+            }
+        }
 
+        val captureItem = MenuItem("Capture")
+        captureItem.addActionListener {
+            Platform.runLater {
+                CaptureController().showCapture()
+            }
+        }
+
+        popup.add(captureItem)
+        popup.add(settingsItem)
         popup.add(aboutItem)
         popup.addSeparator()
         popup.add(exitItem)
@@ -73,15 +90,5 @@ fun main(args: Array<String>) {
     Application.launch(EasyBookmarkApp::class.java, *args)
 }
 
-/* aboutItem.addActionListener {
-     val scriptEngineManager = ScriptEngineManager()
-     val scriptEngine = scriptEngineManager.getEngineByName("AppleScript")
-     try {
-         val result = scriptEngine.eval("tell application \"Google Chrome\" to return (URL of active tab of window 1 as text)")
-         JOptionPane.showMessageDialog(null, result, "Title", JOptionPane.INFORMATION_MESSAGE)
-     } catch (e: Throwable) {
-         JOptionPane.showMessageDialog(null, e.message, "Title", JOptionPane.INFORMATION_MESSAGE)
 
-     }
- }*/
 
