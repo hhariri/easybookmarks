@@ -7,6 +7,7 @@ import tornadofx.ItemViewModel
 
 class CaptureViewModel : ItemViewModel<Link>() {
     val url = bind { item?.urlProperty() }
+    val title = bind { item?.titleProperty() }
     val category = bind { item?.categoryProperty() }
     val notes = bind { item?.notesProperty() }
 }

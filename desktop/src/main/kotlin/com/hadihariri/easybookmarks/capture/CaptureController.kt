@@ -11,6 +11,7 @@ class CaptureController: Controller() {
     val osxUrl = OSXUrl()
 
     fun showCapture() {
+        model.title.value = osxUrl.chrome().title
         model.url.value = osxUrl.chrome().url
         showView(captureView)
     }
